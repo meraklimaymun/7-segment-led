@@ -1,0 +1,148 @@
+
+//alt kısımdaki pinler
+const int LED1 = 4; 
+const int LED2 = 5;  
+const int LED3 = 6;   
+const int LED4 = 7;  
+
+// üst kısımdaki pinler
+
+const int LED5 = 8; 
+const int LED6 = 9;   
+const int LED7 = 10;  
+const int LED8 = 11; 
+
+const int potpin = A0;
+int duzhesap = 0;
+
+
+void setup() {
+  pinMode(LED1, OUTPUT);   
+  pinMode(LED2, OUTPUT); 
+  pinMode(LED3, OUTPUT); 
+  pinMode(LED4, OUTPUT);   
+  pinMode(LED5, OUTPUT);   
+  pinMode(LED6, OUTPUT);   
+  pinMode(LED7, OUTPUT);   
+  pinMode(LED8, OUTPUT);   
+  pinMode(potpin, INPUT);
+
+}
+
+void loop(){
+duzhesap = analogRead(potpin);
+duzhesap = map(duzhesap,0,1023,0,10);
+
+switch (duzhesap) {
+  case 0:
+  // 0 yazdırıyoruz.
+  digitalWrite(LED1, HIGH); 
+  digitalWrite(LED2, LOW); 
+  digitalWrite(LED3, LOW);
+  digitalWrite(LED4, LOW);
+  digitalWrite(LED5, LOW);
+  digitalWrite(LED6, LOW);
+  digitalWrite(LED7, LOW);
+  digitalWrite(LED8, HIGH);  
+  break;
+  case 1:
+  // 1 yazdırıyoruz.
+  digitalWrite(LED1, HIGH); 
+  digitalWrite(LED2, LOW); 
+  digitalWrite(LED3, HIGH);
+  digitalWrite(LED4, HIGH);
+  digitalWrite(LED5, LOW);
+  digitalWrite(LED6, HIGH);
+  digitalWrite(LED7, HIGH);
+  digitalWrite(LED8, HIGH);
+  break;
+  case 2:
+  // 2 yazdırıyoruz.
+  digitalWrite(LED1, HIGH); 
+  digitalWrite(LED2, HIGH); 
+  digitalWrite(LED3, LOW);
+  digitalWrite(LED4, LOW);
+  digitalWrite(LED5, LOW);
+  digitalWrite(LED6, LOW);
+  digitalWrite(LED7, HIGH);
+  digitalWrite(LED8, LOW);
+  break;
+  case 3:
+  // 3 yazdırıyoruz.
+  digitalWrite(LED1, HIGH); 
+  digitalWrite(LED2, LOW); 
+  digitalWrite(LED3, LOW);
+  digitalWrite(LED4, HIGH);
+  digitalWrite(LED5, LOW);
+  digitalWrite(LED6, LOW);
+  digitalWrite(LED7, HIGH);
+  digitalWrite(LED8, LOW);
+  break;
+  case 4:
+  // 4 yazdırıyoruz.
+  digitalWrite(LED1, HIGH); 
+  digitalWrite(LED2, LOW); 
+  digitalWrite(LED3, HIGH);
+  digitalWrite(LED4, HIGH);
+  digitalWrite(LED5, LOW);
+  digitalWrite(LED6, HIGH);
+  digitalWrite(LED7, LOW);
+  digitalWrite(LED8, LOW);
+  break;
+  case 5:
+  // 5 yazdırıyoruz.
+  digitalWrite(LED1, HIGH); 
+  digitalWrite(LED2, LOW); 
+  digitalWrite(LED3, LOW);
+  digitalWrite(LED4, HIGH);
+  digitalWrite(LED5, HIGH);
+  digitalWrite(LED6, LOW);
+  digitalWrite(LED7, LOW);
+  digitalWrite(LED8, LOW);
+  break;
+  case 6:
+  // 6 yazdırıyoruz.
+  digitalWrite(LED1, HIGH); 
+  digitalWrite(LED2, LOW); 
+  digitalWrite(LED3, LOW);
+  digitalWrite(LED4, LOW);
+  digitalWrite(LED5, HIGH);
+  digitalWrite(LED6, LOW);
+  digitalWrite(LED7, LOW);
+  digitalWrite(LED8, LOW);
+  break;
+  case 7:
+  // 7 yazdırıyoruz.
+  digitalWrite(LED1, HIGH); 
+  digitalWrite(LED2, LOW); 
+  digitalWrite(LED3, HIGH);
+  digitalWrite(LED4, HIGH);
+  digitalWrite(LED5, LOW);
+  digitalWrite(LED6, LOW);
+  digitalWrite(LED7, LOW);
+  digitalWrite(LED8, HIGH);
+  break;
+  case 8:
+  // 8 yazdırıyoruz.
+  digitalWrite(LED1, HIGH); 
+  digitalWrite(LED2, LOW); 
+  digitalWrite(LED3, LOW);
+  digitalWrite(LED4, LOW);
+  digitalWrite(LED5, LOW);
+  digitalWrite(LED6, LOW);
+  digitalWrite(LED7, LOW);
+  digitalWrite(LED8, LOW);
+  break;
+  case 9:
+  // 9 yazdırıyoruz.
+  digitalWrite(LED1, HIGH); 
+  digitalWrite(LED2, LOW); 
+  digitalWrite(LED3, LOW);
+  digitalWrite(LED4, HIGH);
+  digitalWrite(LED5, LOW);
+  digitalWrite(LED6, LOW);
+  digitalWrite(LED7, LOW);
+  digitalWrite(LED8, LOW);
+  break;
+}
+}
