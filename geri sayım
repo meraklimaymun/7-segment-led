@@ -30,106 +30,161 @@ void setup() {
 }
 
 void loop(){
-// 9 yazdırıyoruz
-  digitalWrite(LED1, HIGH); 
-  digitalWrite(LED2, LOW); 
-  digitalWrite(LED3, LOW);
-  digitalWrite(LED4, HIGH);
-  digitalWrite(LED5, LOW);
-  digitalWrite(LED6, LOW);
-  digitalWrite(LED7, LOW);
-  digitalWrite(LED8, LOW);  
-delay(1000);
-// 8 yazdırıyoruz
-  digitalWrite(LED1, HIGH); 
-  digitalWrite(LED2, LOW); 
-  digitalWrite(LED3, LOW);
-  digitalWrite(LED4, LOW);
-  digitalWrite(LED5, LOW);
-  digitalWrite(LED6, LOW);
-  digitalWrite(LED7, LOW);
-  digitalWrite(LED8, LOW);
-delay(1000);  
-// 7 yazdırıyoruz
-  digitalWrite(LED1, HIGH); 
-  digitalWrite(LED2, LOW); 
-  digitalWrite(LED3, HIGH);
-  digitalWrite(LED4, HIGH);
-  digitalWrite(LED5, LOW);
-  digitalWrite(LED6, LOW);
-  digitalWrite(LED7, LOW);
-  digitalWrite(LED8, HIGH);
-delay(1000);  
-// 6 yazdırıyoruz
-  digitalWrite(LED1, HIGH); 
-  digitalWrite(LED2, LOW); 
-  digitalWrite(LED3, LOW);
-  digitalWrite(LED4, LOW);
-  digitalWrite(LED5, HIGH);
-  digitalWrite(LED6, LOW);
-  digitalWrite(LED7, LOW);
-  digitalWrite(LED8, LOW);
-delay(1000);  
-// 5 yazdırıyoruz
-  digitalWrite(LED1, HIGH); 
-  digitalWrite(LED2, LOW); 
-  digitalWrite(LED3, LOW);
-  digitalWrite(LED4, HIGH);
-  digitalWrite(LED5, HIGH);
-  digitalWrite(LED6, LOW);
-  digitalWrite(LED7, LOW);
-  digitalWrite(LED8, LOW);
-delay(1000); 
-// 4 yazdırıyoruz
-  digitalWrite(LED1, HIGH); 
-  digitalWrite(LED2, LOW); 
-  digitalWrite(LED3, HIGH);
-  digitalWrite(LED4, HIGH);
-  digitalWrite(LED5, LOW);
-  digitalWrite(LED6, HIGH);
-  digitalWrite(LED7, LOW);
-  digitalWrite(LED8, LOW);
-delay(1000);
-// 3 yazdırıyoruz
-  digitalWrite(LED1, HIGH); 
-  digitalWrite(LED2, LOW); 
-  digitalWrite(LED3, LOW);
-  digitalWrite(LED4, HIGH);
-  digitalWrite(LED5, LOW);
-  digitalWrite(LED6, LOW);
-  digitalWrite(LED7, HIGH);
-  digitalWrite(LED8, LOW);
-delay(1000);
-// 2 yazdırıyoruz
-  digitalWrite(LED1, HIGH); 
-  digitalWrite(LED2, HIGH); 
-  digitalWrite(LED3, LOW);
-  digitalWrite(LED4, LOW);
-  digitalWrite(LED5, LOW);
-  digitalWrite(LED6, LOW);
-  digitalWrite(LED7, HIGH);
-  digitalWrite(LED8, LOW);
-delay(1000);
-// 1 yazdırıyoruz
-  digitalWrite(LED1, HIGH); 
-  digitalWrite(LED2, LOW); 
-  digitalWrite(LED3, HIGH);
-  digitalWrite(LED4, HIGH);
-  digitalWrite(LED5, LOW);
-  digitalWrite(LED6, HIGH);
-  digitalWrite(LED7, HIGH);
-  digitalWrite(LED8, HIGH);
-delay(1000);
-// 0 yazdırıyoruz.
-  digitalWrite(LED1, HIGH); 
-  digitalWrite(LED2, LOW); 
-  digitalWrite(LED3, LOW);
-  digitalWrite(LED4, LOW);
-  digitalWrite(LED5, LOW);
-  digitalWrite(LED6, LOW);
-  digitalWrite(LED7, LOW);
-  digitalWrite(LED8, HIGH);  
-delay(1000);
+  sayi(0); // 0 Yazdırıyoruz
+  delay(1000);
+  sayi(0); // 1 Yazdırıyoruz
+  delay(1000);
+  sayi(0); // 2 Yazdırıyoruz
+  delay(1000);
+  sayi(0); // 3 Yazdırıyoruz
+  delay(1000);
+  sayi(0); // 4 Yazdırıyoruz
+  delay(1000);
+  sayi(0); // 5 Yazdırıyoruz
+  delay(1000);
+  sayi(0); // 6 Yazdırıyoruz
+  delay(1000);
+  sayi(0); // 7 Yazdırıyoruz
+  delay(1000);
+  sayi(0); // 8 Yazdırıyoruz
+  delay(1000);
+  sayi(0); // 9 Yazdırıyoruz
+  delay(1000);
 }
 
+function sayi(sayi){
+  switch(sayi){
+    // 0 İse çalışacak
+    case 0:
+      digitalWrite(LED1, HIGH); 
+      digitalWrite(LED2, LOW); 
+      digitalWrite(LED3, LOW);
+      digitalWrite(LED4, LOW);
+      digitalWrite(LED5, LOW);
+      digitalWrite(LED6, LOW);
+      digitalWrite(LED7, LOW);
+      digitalWrite(LED8, HIGH);
+    break;
+    
+    // 1 İse çalışacak
+    case 1:
+      digitalWrite(LED1, HIGH); 
+      digitalWrite(LED2, LOW); 
+      digitalWrite(LED3, HIGH);
+      digitalWrite(LED4, HIGH);
+      digitalWrite(LED5, LOW);
+      digitalWrite(LED6, HIGH);
+      digitalWrite(LED7, HIGH);
+      digitalWrite(LED8, HIGH);
+    break;
+    
+    // 2 İse çalışacak
+    case 2:
+      digitalWrite(LED1, HIGH); 
+      digitalWrite(LED2, HIGH); 
+      digitalWrite(LED3, LOW);
+      digitalWrite(LED4, LOW);
+      digitalWrite(LED5, LOW);
+      digitalWrite(LED6, LOW);
+      digitalWrite(LED7, HIGH);
+      digitalWrite(LED8, LOW);
+    break;
+    
+    // 3 İse çalışacak
+    case 3:
+      digitalWrite(LED1, HIGH); 
+      digitalWrite(LED2, LOW); 
+      digitalWrite(LED3, LOW);
+      digitalWrite(LED4, HIGH);
+      digitalWrite(LED5, LOW);
+      digitalWrite(LED6, LOW);
+      digitalWrite(LED7, HIGH);
+      digitalWrite(LED8, LOW);
+    break;
+    
+    // 4 İse çalışacak
+    case 4:
+      digitalWrite(LED1, HIGH); 
+      digitalWrite(LED2, LOW); 
+      digitalWrite(LED3, HIGH);
+      digitalWrite(LED4, HIGH);
+      digitalWrite(LED5, LOW);
+      digitalWrite(LED6, HIGH);
+      digitalWrite(LED7, LOW);
+      digitalWrite(LED8, LOW);
+    break;
+    
+    // 5 İse çalışacak
+    case 5:
+      digitalWrite(LED1, HIGH); 
+      digitalWrite(LED2, LOW); 
+      digitalWrite(LED3, LOW);
+      digitalWrite(LED4, HIGH);
+      digitalWrite(LED5, HIGH);
+      digitalWrite(LED6, LOW);
+      digitalWrite(LED7, LOW);
+      digitalWrite(LED8, LOW);
+    break;
+    
+    // 6 İse çalışacak
+    case 6:
+      digitalWrite(LED1, HIGH); 
+      digitalWrite(LED2, LOW); 
+      digitalWrite(LED3, LOW);
+      digitalWrite(LED4, LOW);
+      digitalWrite(LED5, HIGH);
+      digitalWrite(LED6, LOW);
+      digitalWrite(LED7, LOW);
+      digitalWrite(LED8, LOW);
+    break;
+    
+    // 7 İse çalışacak
+    case 7:
+      digitalWrite(LED1, HIGH); 
+      digitalWrite(LED2, LOW); 
+      digitalWrite(LED3, HIGH);
+      digitalWrite(LED4, HIGH);
+      digitalWrite(LED5, LOW);
+      digitalWrite(LED6, LOW);
+      digitalWrite(LED7, LOW);
+      digitalWrite(LED8, HIGH);
+    break;
+    
+    // 8 İse çalışacak
+    case 8:
+      digitalWrite(LED1, HIGH); 
+      digitalWrite(LED2, LOW); 
+      digitalWrite(LED3, LOW);
+      digitalWrite(LED4, LOW);
+      digitalWrite(LED5, LOW);
+      digitalWrite(LED6, LOW);
+      digitalWrite(LED7, LOW);
+      digitalWrite(LED8, LOW);
+    break;
+    
+    // 9 İse çalışacak
+    case 9:
+      digitalWrite(LED1, HIGH); 
+      digitalWrite(LED2, LOW); 
+      digitalWrite(LED3, LOW);
+      digitalWrite(LED4, HIGH);
+      digitalWrite(LED5, LOW);
+      digitalWrite(LED6, LOW);
+      digitalWrite(LED7, LOW);
+      digitalWrite(LED8, LOW);
+    break;
+    
+    // Hiçbirşey gelmiyorsa çalışacak
+    default:
+      digitalWrite(LED1, HIGH); 
+      digitalWrite(LED2, LOW); 
+      digitalWrite(LED3, LOW);
+      digitalWrite(LED4, LOW);
+      digitalWrite(LED5, LOW);
+      digitalWrite(LED6, LOW);
+      digitalWrite(LED7, LOW);
+      digitalWrite(LED8, HIGH);
+    break;
+  }
+}
 
